@@ -19,6 +19,19 @@ describe('bytes', () => {
 	it ('should pass through null', () => {
 		expect(bytes(null)).to.equal(null);
 	});
+	it ('should pass through number', () => {
+		expect(bytes(200)).to.equal(200);
+	});
+	it ('should throw error on unknown input', () => {
+		expect(() => {
+			bytes(new Date());
+		}).to.throw(SyntaxError);
+	});
+	it ('should throw on undetermined destination unit', () => {
+		expect(() => {
+			bytes('0kb', 'asd');
+		}).to.throw(SyntaxError);
+	});
 });
 
 describe('durations', () => {
@@ -36,5 +49,21 @@ describe('durations', () => {
 	});
 	it ('should pass through null', () => {
 		expect(duration(null)).to.equal(null);
+	});
+	it ('should pass through number', () => {
+		expect(duration(200)).to.equal(200);
+	});
+	it ('should throw error on unknown input', () => {
+		expect(() => {
+			duration(new Date());
+		}).to.throw(SyntaxError);
+	});
+	it ('should throw on undetermined destination unit', () => {
+		expect(() => {
+			duration('0kb', 'asd');
+		}).to.throw(SyntaxError);
+	});
+	it ('should support multiple inputs', () => {
+		expect(duration('2h22m', 'm')).to.equal(142);
 	});
 });
