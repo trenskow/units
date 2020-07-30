@@ -1,6 +1,7 @@
 @trenskow/units
+----
 
-A library for converting string variants of durations and byte sizes into numbers.
+Small library for parsing units.
 
 # Usage
 
