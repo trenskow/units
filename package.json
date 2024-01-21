@@ -3,6 +3,7 @@
   "version": "0.1.11",
   "description": "Small library for parsing units.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha.js ./test/index.js"
   },

@@ -1,10 +1,6 @@
-'use strict';
+import { expect } from 'chai';
 
-const
-	{ expect } = require('chai');
-
-const
-	{ bytes, duration } = require('../');
+import { bytes, duration } from '../index.js'
 
 describe('bytes', () => {
 	it('should come back with mibibytes as kibibytes', () => {

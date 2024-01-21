@@ -1,7 +1,4 @@
-'use strict';
-
-const
-	merge = require('merge');
+import merge from 'merge';
 
 const metricSuffixes = {
 	minor: [{
@@ -224,15 +221,24 @@ const applyFunctions = (to, suffixes) => {
 
 };
 
-exports = module.exports = {};
-
-exports.duration = (input, to = 's') => {
+let convertDuration = (input, to = 's') => {
 	return convert(duration, input, to);
 };
 
-exports.bytes = (input, to = 'B') => {
+let convertBytes = (input, to = 'B') => {
 	return convert(byte, input, to);
 };
 
-applyFunctions(exports.duration, duration.suffixes);
-applyFunctions(exports.bytes, byte.suffixes);
+applyFunctions(convertDuration, duration.suffixes);
+applyFunctions(convertBytes, byte.suffixes);
+
+let units = {
+	duration: convertDuration,
+	bytes: convertBytes
+};
+
+export default units;
+
+export {
+	convertDuration as duration,
+	convertBytes as bytes };
