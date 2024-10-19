@@ -1,4 +1,4 @@
-import merge from 'merge';
+import merge from '@trenskow/merge';
 
 const metricSuffixes = {
 	minor: [{
@@ -241,4 +241,5 @@ export default units;
 
 export {
 	convertDuration as duration,
-	convertBytes as bytes };
+	convertBytes as bytes
+};

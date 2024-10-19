@@ -24,9 +24,6 @@
 		"url": "https://github.com/trenskow/units/issues"
 	},
 	"homepage": "https://github.com/trenskow/units#readme",
-	"dependencies": {
-		"merge": "^2.1.1"
-	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3.1.0",
 		"@eslint/js": "^9.13.0",
@@ -34,5 +31,8 @@
 		"eslint": "^9.13.0",
 		"globals": "^15.11.0",
 		"mocha": "^10.3.0"
+	},
+	"dependencies": {
+		"@trenskow/merge": "^0.1.26"
 	}
 }
