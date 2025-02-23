@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { bytes, duration } from '../index.js'
+import { bytes, duration } from '../index.js';
 
 describe('bytes', () => {
 	it('should come back with mibibytes as kibibytes', () => {
