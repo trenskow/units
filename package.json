@@ -1,6 +1,6 @@
 {
 	"name": "@trenskow/units",
-	"version": "0.2.27",
+	"version": "0.2.28",
 	"description": "Small library for parsing units.",
 	"main": "index.js",
 	"type": "module",
