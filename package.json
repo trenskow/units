@@ -25,14 +25,14 @@
 	},
 	"homepage": "https://github.com/trenskow/units#readme",
 	"devDependencies": {
-		"@eslint/eslintrc": "^3.3.6",
+		"@eslint/eslintrc": "^3.3.7",
 		"@eslint/js": "^10.0.1",
 		"chai": "^6.2.2",
-		"eslint": "^10.8.0",
-		"globals": "^17.9.0",
+		"eslint": "^10.10.0",
+		"globals": "^17.12.0",
 		"mocha": "^12.0.1"
 	},
 	"dependencies": {
-		"@trenskow/merge": "^0.1.64"
+		"@trenskow/merge": "^0.1.67"
 	}
 }
