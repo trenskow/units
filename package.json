@@ -33,6 +33,6 @@
 		"mocha": "^12.0.3"
 	},
 	"dependencies": {
-		"@trenskow/merge": "^0.1.70"
+		"@trenskow/merge": "^0.1.71"
 	}
 }
